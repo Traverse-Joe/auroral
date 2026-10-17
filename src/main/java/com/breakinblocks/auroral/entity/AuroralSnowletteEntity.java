@@ -172,8 +172,7 @@ public class AuroralSnowletteEntity extends TamableAnimal {
         AuroralSnowletteEntity snowlette = ModEntities.AURORAL_SNOWLETTE.get().create(level, EntitySpawnReason.CONVERSION);
         if (snowlette != null) {
             snowlette.setPos(x, y, z);
-            snowlette.setTame(true, false);
-            snowlette.setOwner(owner);
+            snowlette.tame(owner);
             level.addFreshEntity(snowlette);
 
             // Spawn transformation particles
